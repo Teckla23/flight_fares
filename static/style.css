@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; 
+  text-decoration: none;
+  transition:all .2s linear;
+  transition:width none;
+  list-style: none;
+}
+.menu{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.menu li{
+  padding:5px 22px;
+  font-size: 18px; 
+  text-align: center;
+
+}
+.menu li:hover{
+    transform: scale(1.17); 
+}
+.toggle{
+    font-size:30px;
+    display: none;
+}
+
+.back-slide{
+    background-color: blue;
+}
+.back-slide div img{
+    width:100%;
+    height: 100vh;
+    border-radius: 0 0 20vw 20vw;
+    opacity: 0.6;
+}
+.input{
+  width: 70vw;
+  height:16vw;
+  border-radius: 10px;
+  left:15vw;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+}
+
+.fs-7{
+  font-size: 15px;
+}
+#covid,#provisions{
+    margin-top: 10%;
+}
+#heading{
+    margin-left:10% ;
+    color: orangered;
+    font-size: 2.5vw;
+    font-weight: 504;
+}
+#heading-base{
+    color: rgb(250, 142, 103);
+}
+.covid-rules{
+    margin-top: 5%;
+    color: aliceblue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.covid-left,.covid-right{
+    width: 30vw;
+    height: 16vw;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    border-radius: 10px;
+    text-align: center;
+}
+.covid-left p,.covid-right p{
+    writing-mode: vertical-rl;
+    width: 20%;
+}
+.covid-left img,.covid-right img,.cov-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.cov-img img{
+    opacity: 1;
+    border-radius: 10px;
+}
+.covid-center{
+    width: 40vw;
+    height: 22vw;
+    margin: auto;
+    background-color: blue;
+    display:flex;
+    flex-direction: row;
+    margin-top: -19%;
+    border-radius: 10px;
+}
+.cov-img{
+    width:26vw;
+    background-color: aliceblue;
+
+}
+.covid-text{
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    width: 45%;
+    height:26vw;
+    background-color:blue;
+    border-radius: 10px;
+    color:white;
+}
+
+
+/*Photo Section*/
+#photo{
+    margin-top: 13%;
+    text-align: center;
+}
+.rectangle{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18vw;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color:rgb(253, 253, 253);
+}
+.rectangle img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.rectangle h2{
+    position: absolute;
+}
+
+
+
+/*media queries*/
+@media screen and (max-width:600px){
+    nav{
+        display:block;
+        position:relative;
+        padding:15px 20px;
+    }
+    .menu{
+        margin-top:9vw;
+        display:none;
+    }
+    .menu.active, .toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        top:15px;
+        right:20px;
+    }
+    .menu li:hover{
+        transform: none;
+    }
+}
+
+/*airport input css*/
+.book-ticket{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 60vw;
+    height: 10vw;
+    opacity: 1; 
+    left:20%;
+    top:15%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  .form-group {
+    margin-bottom: 20px;
+    width: 20%;
+    background-color: #00b6f2;
+  }
+  .control-label {
+    display: block;
+  }
+  .autocomplete-wrapper {
+    position: relative;
+  }
+  .autocomplete-wrapper input {
+    width: 100%;
+  }
+  
+  .autocomplete-results {
+    position: absolute;
+    background: white;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    font-size: 13px;
+    border: solid 1px #ddd;
+    border-top-width: 0;
+    border-bottom-color: #ccc;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .autocomplete-result {
+    padding: 12px 15px;
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+  }
+  
+  .autocomplete-result:last-child {
+    border-bottom-width: 0;
+  }
+  
+  .autocomplete-location {
+    opacity: 0.8;
+    font-size: smaller;
+  }
+  
+  .autocomplete-results[data-highlight="0"] > :nth-child(1) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+  
+  .autocomplete-results[data-highlight="1"] > :nth-child(2) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+  
+  .autocomplete-results[data-highlight="2"] > :nth-child(3) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+  
+  .autocomplete-results[data-highlight="3"] > :nth-child(4) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+  
+  .autocomplete-results[data-highlight="4"] > :nth-child(5) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+  
+  .autocomplete-results[data-highlight="5"] > :nth-child(6) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+  
+  .autocomplete-results[data-highlight="6"] > :nth-child(7) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+  
+  .autocomplete-results[data-highlight="7"] > :nth-child(8) {
+    color: white;
+    background: #26c9ff;
+    border-bottom-color: #26c9ff;
+    outline: solid 1px #00b6f2;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*checklist section*/
+   #checklist{
+        margin-top: 5%;
+    }
+    .container{
+        background-color: #09B778;
+    }
+   #checklist .slide{
+    margin-top: 13%;
+    width:100%;
+   }
+   #checklist{
+    width:100%;
+   }
+   .slide .slide1{
+    width:50%;
+    height: 7.5vh;
+    background-color: rgba(252, 166, 132, 0.637);
+    border-radius: 30px;
+    margin-left:25%;
+    margin-top: 8%;
+   }
+   .slide .slide2{
+    width: 50%;
+    height: 7.5vh;
+    background-color: #1414f3;
+    border-radius: 30px;
+    margin-left:0%;
+    margin-top: -14%;
+   }
+   .slide1 .word1{
+    font-size: 100%;
+    font-weight: bold;
+    margin-left: 27vw;
+   }
+   .slide1 .word2{
+    margin-left: -1vw;
+    font-size: 100%;
+    font-weight: bold;
+   }
+   .slide1 .word1 a{
+    position: absolute;
+    margin-top: -5vh;
+    color: #000;
+    text-decoration: none;
+   }
+   .slide1 .word2 a{
+    position: absolute;
+    margin-top: -6vh;
+    margin-left: 7vw;
+    color: #fff;
+    text-decoration: none;
+   }
+  
+  #checklist .p-desc{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #checklist .p-desc h2, #checklist .p-desc p{
+    width: 24rem;
+  }
+  
+  #checklist .btn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    background-color:orangered;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    font-weight: 500;
+  }
+  
+  #checklist .btn:hover{
+    background-color: blue;
+    border: 1.4px solid #09B778;
+    color: #fff;
+  }
+
+
+  .contain{
+    display: flex;
+    float: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:5%;
+  }
+  .prov{
+    width: 500px;
+    height: 300px;
+    background-color:rgb(255, 247, 247);
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin:5%;
+  }
+  div.im{
+    width: 90%;
+
+  }
+  .im img{
+    width: 100%;
+    height: 100%;
+  }
+  .cont{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    height: 350px;
+    align-self: center;
+    width: 400px;
+    margin-left: -10%;
+    border-radius: 10px;
+  }
+  .btn{
+    position: absolute;
+    padding: 30px;
+    margin-top:5%;
+    color: #eee;
+}
+
+  .view,.btn{
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 9px;
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: rgb(249, 229, 222);
+  }
+  .view:hover,.btn:hover{
+    background-color: orangered;
+    color:white;
+  }
+  .foot{
+    background-color: #1414f3;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+  }
+  .foot h6,.foot h2{
+    margin: 15% 0%;
+  }
+.last{
+  text-align: center;
+  color: orangered;
+  height: 1.6vw;
+  font-weight: 600;
+}
+.blue{
+  height: 2vw;
+  background-color: blue;
+}
